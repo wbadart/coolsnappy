@@ -90,7 +90,7 @@ with project board automation. If your PR will fully address an issue, we
 encourage you to link that issue using the special syntax. **However**, if the
 issue has explicitly listed its acceptance criteria, we ask that you copy those
 bullet points into a blockquote in the body of your PR and explain (if briefly)
-how the proposed changes address each requirement. See #6 for an example.
+how the proposed changes address each requirement. See [#6][11] for an example.
 
 #### Status Checks
 
@@ -133,3 +133,4 @@ the coolsnappy community!
 [08]: https://curiousprogrammer.io/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git
 [09]: https://github.blog/2019-02-14-introducing-draft-pull-requests
 [10]: https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword
+[11]: https://github.com/wbadart/coolsnappy/pull/6
