@@ -25,4 +25,4 @@ jobs:
     # Lint markdown files with the default rules
     # See: https://github.com/avto-dev/markdown-lint
     - name: Markdown Linting Action
-      uses: 'bewuethr/mdl-action@v1.1.2'
+      uses: bewuethr/mdl-action@v1.0.11
