@@ -62,6 +62,61 @@ Or directly with ruby:
 gem install mdl && mdl .
 ```
 
+### Creating a PR
+
+There are a couple items we'd like you to keep in mind as you craft your PR
+that will help us review your changes and get your contribution merged as fast
+as possible.
+
+#### Atomic, Readable Diffs
+
+Every PR will need to be reviewed before it's merged (even those from
+maintainers). PRs, therefore, should be optimized for the review process.
+
+There might be lots you want to contribute, but it's easiest to review change
+sets one at a time. Focus your PR on a single contribution. Look at the diff
+from the perspective of a reviewer and ask yourself, does every little bit of
+red and green relate to the one problem I'm trying to solve? This will be
+easier if the commits which comprise your PR are themselves [atomic][08].
+
+You can open a PR that isn't quite ready for review as a [draft][09]. This is a
+great way to get early feedback and discussion about an idea, even before the
+"formal" review process begins.
+
+#### Closing Keywords
+
+[Closing keywords][10] are a fantastic feature of GitHub that play marvelously
+with project board automation. If your PR will fully address an issue, we
+encourage you to link that issue using the special syntax. **However**, if the
+issue has explicitly listed its acceptance criteria, we ask that you copy those
+bullet points into a blockquote in the body of your PR and explain (if briefly)
+how the proposed changes address each requirement. See #6 for an example.
+
+#### Status Checks
+
+Please address any failed status checks on your PR before requesting review. We
+won't be able to merge it until it passes anyway.
+
+#### Metadata
+
+GitHub gives you the option (in the menu on the right-hand side of the PR
+creation page) to attach all manner of metadata to your issue. You can mostly
+leave these alone, other than adding an appropriate label if you see fit. This
+will most likely be one of `documentation`, `bug`, or `enhancement`. (Sizes and
+story/ task/ epic are reserved for issues.)
+
+The assignee is the person responsible for seeing the PR through to completion.
+This is mostly you, with a little bit from the maintainer who clicks the
+"merge" button at the end of the process. Single-commit PRs can be rebased and
+merged, while all others should create a merge commit (the default option). The
+working branch should be based on the current `master` commit to support a
+pseudo-linear history (all commits are sequential, other than merge commits
+which delineate work done).
+
+A reviewer, by contrast, is only responsible for submitting feedback and either
+requesting changes or approving the PR. In general, avoid submitting a review
+for a draft PR.
+
 ---
 
 coolsnappy is maintained by volunteers. We only have a few hours a week to
@@ -75,3 +130,6 @@ the coolsnappy community!
 [04]: https://github.com/wbadart/coolsnappy/issues/new
 [06]: https://github.com/wbadart/coolsnappy/actions
 [07]: https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md
+[08]: https://curiousprogrammer.io/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git
+[09]: https://github.blog/2019-02-14-introducing-draft-pull-requests
+[10]: https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword
